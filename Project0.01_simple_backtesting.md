@@ -34,11 +34,13 @@ This is where we compute the indicators that will feed into section 4 and 5 for 
 We will compute the following indicators:
 1. Simple Moving Average of 50 days (SMA_50)
 2. Simple Moving Average of 200 days (SMA_200)
+
 $$ SMA_t = \frac{1}{n} \sum_{i=0}^{n-1} P_{i} $$
 - where $n$ is the number of days, 
 - $P_i$ is the price of the stock on day i
 
 3. Relative strength index (RSI) of 14 days
+
 $$ RSI_t = 100 - \frac{100}{1 + RS_t} $$
 - where $RS_t$ is the relative strength of the stock on day t
 
@@ -66,7 +68,7 @@ In this section we will run the backtest, which will generate both the strategy 
 
 We will use the following formulas:
 
-$$ Str_r = Position_t\;·\;R_t $$
+$$ Str_r = Position_t\times R_t $$
 
 - $Str_r$ is the strategy return on day t
 - $Position_t$ a dummy variable, if 1 buy/hold, if 0 not buy/sell
